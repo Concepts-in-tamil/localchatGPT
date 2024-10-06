@@ -1,6 +1,5 @@
 import streamlit as st
 from localchatgpt_init import *
-import os
 import time
 from streamlit_extras.tags import tagger_component
 
@@ -18,7 +17,7 @@ with st.sidebar:
     st.metric("Streaming 🔄", returnValue('streaming_enabled'))
 
 # set default system message
-modifySM(returnValue('system_message'))
+setSM(returnValue('system_message'))
 
 st.markdown('# :rainbow[Local Chat GPT] ⚛️')
 

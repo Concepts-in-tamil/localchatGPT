@@ -16,4 +16,9 @@ def clearHistory():
     oClient.clear_history()
 
 def modifySM(new_sm: str) -> None:
+    #print(f'Setting this system message : {new_sm}')
     oClient.edit_system_message(new_sm)
+
+def setSM(sm: str) -> None:
+    #print(f'Setting this system message : {sm}')
+    oClient.set_system_message(sm)
